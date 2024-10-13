@@ -47,7 +47,10 @@ ingreso = prompt("ingrese un numero mas grande que 100");
 console.log("ingresaste un numero mas grande que 100");
 }*/
 
-{
+//punto 4
+
+/*{
+//punto 4.1
 let esPar=(num) =>{
 
     if(num%2==0){
@@ -55,7 +58,106 @@ let esPar=(num) =>{
     } else
     console.log("el numero ",num, "es impar", false)
     }
+esPar(6);
+esPar(17);
+
+//punto 4.2
+let convertirCelsiusAFahrenheit=(medida) =>{
+    let far = medida * 1.8 + 32;
+    console.log(medida, "C° son equivalentes a ",far,"°F")
+}
+convertirCelsiusAFahrenheit(32);
+convertirCelsiusAFahrenheit(17);
+convertirCelsiusAFahrenheit(39);
+}*/
+
+/*//punto 5
+{
+//punto 5.1
+let persona = {
+    nombre: "Ema",
+    apellido: "Ibarra",
+    edad: 21,
+    ciudad: "Guaymallen"
+}
+console.log(persona);
+
+let actualizarCiudad=(nueva) =>{
+    persona.ciudad = nueva;
+    console.log("Datos actualizados ",persona);
+}
+actualizarCiudad("Capital");
+
+//punto 5.2
+let libro = {
+    autor: "George Owell",
+    titulo: "1984",
+    año: 1949
 }
 
+let verificarAntiguedad=(edad) => {
+    if((2024-edad)<=10){
+        console.log("el libro ", libro.nombre, "es antiguo", false) 
+    } else console.log("el libro ", libro.nombre, "es antiguo", true) 
+}
+verificarAntiguedad(libro.edad);
+}*/
 
+//punto 6 arrays
+/*{
+//punto 6.1
+let numeros = [1,2,3,4,5,6,7,8,9,10];
+let numMultiplicados = numeros.map(elemento => elemento*2);
+console.log("Numeros originales ",numeros);
+console.log("Numeros multiplicados por 2 ",numMultiplicados);
+
+//punto 6.2
+let pares = [];
+
+for(let i = 0; i<=20;i++){
+    if(i%2 === 0){
+        pares.push(i);
+    }
+}
+console.log("Primeros numeros pares ",pares);
+
+}*/
+
+//punto 7
+{
+//punto 7.1
+let boton = document.getElementById("boton1");
+let par = document.getElementById("parrafo");
+
+
+let cambiarColor=() =>{
+    if(par.classList.contains("par")){
+    par.classList.remove("par");
+    } else par.classList.add("par");
+}
+
+boton.addEventListener("click", () => {
+    cambiarColor();
+});
+
+//punto 7.2
+let botonAlerta = document.getElementById("boton2");
+
+let getDataInput = () => {
+let input1 = document.getElementById("input");
+alert(input1.value);
+}
+
+botonAlerta.addEventListener('click',()=>{
+getDataInput();    
+})
+
+}
+
+//punto 8
+{
+//punto 8.1
+
+
+}
 
